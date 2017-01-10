@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float speed = 2f;
+    //private float speed = 2f;
     private Transform pos;
 
     // Use this for initialization
@@ -23,6 +22,5 @@ public class PlayerMovement : MonoBehaviour
     }
 }
 	
-}
 	
 	
