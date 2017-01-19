@@ -4,31 +4,31 @@ public class WallDistance : MonoBehaviour {
 
     
     [SerializeField]
-    private GameObject wall;
+    private GameObject _wall;
 
     [SerializeField]
-    private GameObject player;
+    private GameObject _player;
 
-    public static bool nearWall;
+    public static bool NearWall;
 
-    void Start()
+    private void Start()
     {
-        nearWall = false;
+        NearWall = false;
     }
 
 
     // Update is called once per frame
-    void LateUpdate()
+    private void LateUpdate()
     {
-        if ((wall.transform.position - player.transform.position).sqrMagnitude <= 13f)
+        if ((_wall.transform.position - _player.transform.position).sqrMagnitude <= 13f)
         {
             Debug.Log("Burger Time!");
-            nearWall = true;
+            NearWall = true;
             
         } else
         {
-            Debug.Log((wall.transform.position - player.transform.position).sqrMagnitude);
-            nearWall = false;
+            Debug.Log((_wall.transform.position - _player.transform.position).sqrMagnitude);
+            NearWall = false;
         }
     }
 }

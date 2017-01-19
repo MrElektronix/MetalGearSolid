@@ -1,27 +1,37 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CheckTrigger : MonoBehaviour {
-    public static bool nearWall;
+    public static bool NearWall;
+    public static bool NearStair;
 
-    void Start()
+    private void Start()
     {
-        nearWall = false;
+        NearWall = false;
+        NearStair = false;
+
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("walltrigger"))
         {
-            nearWall = true;
+            NearWall = true;
+        }
+        if (other.gameObject.CompareTag("stairtrigger"))
+        {
+            NearStair = true;
         }
     }
 
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("walltrigger"))
         {
-            nearWall = false;
+            NearWall = false;
+        }
+        if (other.gameObject.CompareTag("stairtrigger"))
+        {
+            NearStair = false;
         }
     }
 
