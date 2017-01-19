@@ -3,8 +3,6 @@ using System.Collections;
 
 public class UIAnimation : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _ui;
     private Animator _anim;
     private bool _uiUP = false;
 
@@ -17,10 +15,9 @@ public class UIAnimation : MonoBehaviour
 
     IEnumerator Animation()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(7);
         _anim.enabled = true;
         _uiUP = true;
-        //_anim.SetTrigger("MoveUP");
     }
 
     void Update()
