@@ -2,23 +2,24 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    //private float speed = 2f;
-    private Transform _pos;
+    private const float Speed = 4f;
+
+    [SerializeField]
+    private Rigidbody _rigidbody;
+
 
     // Use this for initialization
     private void Start()
     {
-
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
 
     private void Update()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
-
-        //transform.Rotate(0, x, 0);
-        transform.Translate(x, 0, z);
+        var x = Input.GetAxisRaw("Horizontal") * Speed;
+        var z = Input.GetAxisRaw("Vertical") * Speed;
+        _rigidbody.velocity = new Vector3(x, 0f, z);
     }
 }
 	

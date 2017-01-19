@@ -8,7 +8,6 @@ public class CheckTrigger : MonoBehaviour {
     {
         NearWall = false;
         NearStair = false;
-
     }
 
     private void OnTriggerEnter(Collider other)
