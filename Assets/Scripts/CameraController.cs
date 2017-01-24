@@ -51,11 +51,9 @@ public class CameraController : MonoBehaviour {
     {
         if (CheckTrigger.NearWall == false)
         {
-            RotateObject(_object, "x" , 0f);
             SwitchCamera(0, 30f);
         } else
         {
-            RotateObject(_object, "x" , 0f);
             SwitchCamera(1, 90f);
         }
 
@@ -64,6 +62,10 @@ public class CameraController : MonoBehaviour {
             RotateObject(_object, "x" , -25f);
             SwitchCamera(2, 30f);
             transform.LookAt(_object);
+        }
+        else
+        {
+            RotateObject(_object, "x" , 0f);
         }
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _cameraSpeed);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_rotation), Time.deltaTime * _cameraSpeed);
