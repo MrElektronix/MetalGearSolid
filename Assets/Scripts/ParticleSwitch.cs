@@ -24,7 +24,7 @@ public class ParticleSwitch : MonoBehaviour {
             }
             if (_pSystem.isPlaying)
             {
-                Debug.Log("rip");
+                Debug.Log("renemiesInRangeip");
                 _pSystem.Stop();
             }
         }
