@@ -59,7 +59,7 @@ public class CameraController : MonoBehaviour {
 
         if (CheckTrigger.NearStair)
         {
-            RotateObject(_object, "x" , -25f);
+            //RotateObject(_object, "x" , -25f);
             SwitchCamera(2, 30f);
             transform.LookAt(_object);
         }
