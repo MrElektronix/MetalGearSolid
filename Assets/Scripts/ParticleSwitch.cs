@@ -15,16 +15,14 @@ public class ParticleSwitch : MonoBehaviour {
     void Update()
     {
         var _psMain = _pSystem.main;
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             if (!_pSystem.isPlaying)
             {
                 _pSystem.Play();
-                Debug.Log("no-rip");
             }
-            if (_pSystem.isPlaying)
+            else if (_pSystem.isPlaying)
             {
-                Debug.Log("renemiesInRangeip");
                 _pSystem.Stop();
             }
         }
@@ -35,7 +33,6 @@ public class ParticleSwitch : MonoBehaviour {
         yield return new WaitForSeconds(1);
         if (_pSystem.isPlaying)
         {
-            Debug.Log("autorip");
             _pSystem.Stop();
         }
     }
