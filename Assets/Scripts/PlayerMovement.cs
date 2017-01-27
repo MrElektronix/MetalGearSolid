@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent((typeof(AudioSource)))]
 [RequireComponent((typeof(Rigidbody)))]
 public class PlayerMovement : MonoBehaviour
 {
