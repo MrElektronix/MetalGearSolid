@@ -4,7 +4,7 @@
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private const float Speed = 4f;
+    private float Speed = 2f;
 
     [SerializeField]
     private Rigidbody _rigidbody;
@@ -22,6 +22,15 @@ public class PlayerMovement : MonoBehaviour
         var x = Input.GetAxisRaw("Horizontal") * Speed;
         var z = Input.GetAxisRaw("Vertical") * Speed;
         _rigidbody.velocity = new Vector3(x, 0f, z);
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Speed = 2.5f;
+        }
+        else
+        {
+            Speed = 1.5f;
+        }
     }
 }
 	
