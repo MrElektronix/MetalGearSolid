@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 3474dc0de284347448949b9f983a091b
+timeCreated: 1485556441
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_Handle_L
+    100002: Arm_Handle_R
+    100004: Arm_L
+    100006: Arm_R
+    100008: back
+    100010: Bones
+    100012: Foot_Handle_L
+    100014: Foot_Handle_R
+    100016: ForeArm_L
+    100018: ForeArm_R
+    100020: Hand_Handle_L
+    100022: Hand_Handle_R
+    100024: Hand_L
+    100026: Hand_R
+    100028: Head
+    100030: Head_End
+    100032: IndexFinger_L_1
+    100034: IndexFinger_L_2
+    100036: IndexFinger_L_3
+    100038: IndexFinger_L_4
+    100040: IndexFinger_R_1
+    100042: IndexFinger_R_2
+    100044: IndexFinger_R_3
+    100046: IndexFinger_R_4
+    100048: Leg_Foot_L
+    100050: Leg_Foot_R
+    100052: Leg_Handle_L
+    100054: Leg_Handle_R
+    100056: Leg_Knee_L
+    100058: Leg_Knee_R
+    100060: Leg_L
+    100062: Leg_R
+    100064: Leg_Toe_L
+    100066: Leg_Toe_L_End
+    100068: Leg_Toe_R
+    100070: Leg_Toe_R_End
+    100072: Neck
+    100074: Rig
+    100076: Shoulder_L
+    100078: Shoulder_R
+    100080: snake:Model001_Body
+    100082: snake:Model001_Hair
+    100084: snake:Model001_Hair1
+    100086: snake:Model001_Hands
+    100088: snake:Model001_Mullet
+    100090: //RootNode
+    100092: Spine
+    100094: Spine1
+    100096: Spine2
+    400000: Arm_Handle_L
+    400002: Arm_Handle_R
+    400004: Arm_L
+    400006: Arm_R
+    400008: back
+    400010: Bones
+    400012: Foot_Handle_L
+    400014: Foot_Handle_R
+    400016: ForeArm_L
+    400018: ForeArm_R
+    400020: Hand_Handle_L
+    400022: Hand_Handle_R
+    400024: Hand_L
+    400026: Hand_R
+    400028: Head
+    400030: Head_End
+    400032: IndexFinger_L_1
+    400034: IndexFinger_L_2
+    400036: IndexFinger_L_3
+    400038: IndexFinger_L_4
+    400040: IndexFinger_R_1
+    400042: IndexFinger_R_2
+    400044: IndexFinger_R_3
+    400046: IndexFinger_R_4
+    400048: Leg_Foot_L
+    400050: Leg_Foot_R
+    400052: Leg_Handle_L
+    400054: Leg_Handle_R
+    400056: Leg_Knee_L
+    400058: Leg_Knee_R
+    400060: Leg_L
+    400062: Leg_R
+    400064: Leg_Toe_L
+    400066: Leg_Toe_L_End
+    400068: Leg_Toe_R
+    400070: Leg_Toe_R_End
+    400072: Neck
+    400074: Rig
+    400076: Shoulder_L
+    400078: Shoulder_R
+    400080: snake:Model001_Body
+    400082: snake:Model001_Hair
+    400084: snake:Model001_Hair1
+    400086: snake:Model001_Hands
+    400088: snake:Model001_Mullet
+    400090: //RootNode
+    400092: Spine
+    400094: Spine1
+    400096: Spine2
+    4300000: snake:Model001_Body
+    4300002: snake:Model001_Hands
+    4300004: snake:Model001_Mullet
+    4300006: snake:Model001_Hair
+    4300008: snake:Model001_Hair1
+    9500000: //RootNode
+    13700000: snake:Model001_Body
+    13700002: snake:Model001_Hair
+    13700004: snake:Model001_Hair1
+    13700006: snake:Model001_Hands
+    13700008: snake:Model001_Mullet
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
