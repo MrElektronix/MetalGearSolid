@@ -5,7 +5,7 @@
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float Speed = 2f;
+    private float _speed = 4f;
 
     [SerializeField]
     private Rigidbody _rigidbody;
@@ -36,18 +36,11 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        var x = Input.GetAxisRaw("Horizontal") * Speed;
-        var z = Input.GetAxisRaw("Vertical") * Speed;
+        var x = Input.GetAxisRaw("Horizontal") * _speed;
+        var z = Input.GetAxisRaw("Vertical") * _speed;
         _rigidbody.velocity = new Vector3(x, 0f, z);
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            Speed = 2.5f;
-        }
-        else
-        {
-            Speed = 1.5f;
-        }
+        _speed = Input.GetKey(KeyCode.LeftShift) ? 2.5f : 1.5f;
     }
 }
 	
