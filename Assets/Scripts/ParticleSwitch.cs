@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent((typeof(ParticleSystem)))]
 public class ParticleSwitch : MonoBehaviour {
 
     private ParticleSystem _pSystem;
