@@ -65,7 +65,7 @@ public class CameraController : MonoBehaviour {
         }
         else
         {
-            RotateObject(_object, "x" , 0f);
+            RotateObject(_object, "x" , 30f);
         }
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _cameraSpeed);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_rotation), Time.deltaTime * _cameraSpeed);
