@@ -59,13 +59,14 @@ public class CameraController : MonoBehaviour {
 
         if (CheckTrigger.NearStair)
         {
-            RotateObject(_object, "x" , -25f);
+            //RotateObject(_object, "x" , -25f);
             SwitchCamera(2, 30f);
             transform.LookAt(_object);
         }
         else
         {
-            RotateObject(_object, "x" , 30f);
+            RotateObject(_object, "x" , 0f);
+            RotateObject(_object, "y" , 180f);
         }
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _cameraSpeed);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_rotation), Time.deltaTime * _cameraSpeed);
