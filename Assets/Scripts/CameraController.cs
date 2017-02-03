@@ -68,6 +68,11 @@ public class CameraController : MonoBehaviour {
             RotateObject(_object, "x" , 0f);
             RotateObject(_object, "y" , 180f);
         }
+
+        if (CheckTrigger.NearHallway)
+        {
+            SwitchCamera(3, 65f);
+        }
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _cameraSpeed);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_rotation), Time.deltaTime * _cameraSpeed);
     }

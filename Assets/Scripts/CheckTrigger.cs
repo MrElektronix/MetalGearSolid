@@ -3,11 +3,13 @@
 public class CheckTrigger : MonoBehaviour {
     public static bool NearWall;
     public static bool NearStair;
+    public static bool NearHallway;
 
     private void Start()
     {
         NearWall = false;
         NearStair = false;
+        NearHallway = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +21,10 @@ public class CheckTrigger : MonoBehaviour {
         if (other.gameObject.CompareTag("stairtrigger"))
         {
             NearStair = true;
+        }
+        if (other.gameObject.CompareTag("hallwaytrigger"))
+        {
+            NearHallway = true;
         }
     }
 
@@ -32,7 +38,9 @@ public class CheckTrigger : MonoBehaviour {
         {
             NearStair = false;
         }
+        if (other.gameObject.CompareTag("hallwaytrigger"))
+        {
+            NearHallway = false;
+        }
     }
-
-
 }
